@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(140deg, gray, rgb(49, 46, 46));
+  padding: 10px;
+  opacity: 90%;
+}
+.titulo {
+  background: black;
+  margin: 20px auto;
+  max-width: 540px;
+  border-radius: 15px;
+  padding: 40px 30px 70px;
+}
+.tituloTexto {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(1, 199, 50);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  border-radius: 30px;
+  background: rgb(82, 174, 204);
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: transparent;
+  font-weight: 1000;
+  font-size: 12px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  background: rgb(214, 144, 53);
+  color: black;
+  font-weight: 1000;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+::placeholder {
+  color: black;
+}
+ul li {
+  list-style: none;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+  background-image: url(../img/circulo.png);
+
+}
+
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(../img/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  color: red;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+ul li span:hover {
+  background: rgb(105, 3, 3);
+}
